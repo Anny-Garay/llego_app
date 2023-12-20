@@ -1,0 +1,39 @@
+{
+    "eventos" : [
+        {
+            "id" : "evento1",
+            "nombre"    :   "Fiesta de hallowen",
+            "lugar"     :   "Casa de Henri",
+            "fecha"     :   "2023-10-14 23:00:00",
+            "notas"     :   "Venir disfrazados"
+        },
+        {
+            "id" : "evento2",
+            "nombre"    :   "Fiesta de 18 años",
+            "lugar"     :   "Casa de Joseph",
+            "fecha"     :   "2023-10-14 23:00:00",
+            "notas"     :   "Venir con trago"
+        },
+        {
+            "id" : "evento3",
+            "nombre"    :   "Fiesta de Crispin",
+            "lugar"     :   "Casa de Andres",
+            "fecha"     :   "2023-10-30 22:00:00",
+            "notas"     :   "Venir con comida"
+        },
+        {
+            "id" : "evento4",
+            "nombre"    :   "50 de años de Angela",
+            "lugar"     :   "Casa de Angela",
+            "fecha"     :   "2023-10-30 23:00:00",
+            "notas"     :   "Venir con sin celular por que te roban"
+        },
+        {
+            "id" : "evento5",
+            "nombre"    :   "Tono de Jota",
+            "lugar"     :   "Casa de Jesús",
+            "fecha"     :   "2023-11-27 23:00:00",
+            "notas"     :   "Venir con locas"
+        }
+    ]
+}

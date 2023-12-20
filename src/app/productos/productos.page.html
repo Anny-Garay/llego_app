@@ -1,0 +1,22 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Productos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding" [fullscreen]="true">
+  
+  <h5>{{ producto?.nombre }}</h5>
+  <h5>{{ producto?.tipo }}</h5>
+  <h5>{{ producto?.precio }}</h5>
+  <h5>{{ producto?.stock }}</h5>
+  <h5>{{ producto?.peso }}</h5>
+
+  <hr>
+  <h2>Productos más vendidos</h2>
+  <ul>
+    <li>Popcorn</li>
+    <li>Gaseosa</li>
+    <li>Papas Lays</li>
+    <li>Piqueo Snack</li>
+  </ul>

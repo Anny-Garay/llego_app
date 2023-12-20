@@ -1,0 +1,41 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Registra a tu amigo :)</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  
+  <ion-content [fullscreen]="true">
+
+    <ion-item fill="outline" class="ion-margin">
+      <ion-label position="floating">Nombre</ion-label>
+      <ion-input placeholder="Escribir" 
+      [(ngModel)]="nombre_completo"></ion-input>
+    </ion-item>
+    
+    <ion-item fill="outline" class="ion-margin">
+      <ion-label position="floating">Telefono</ion-label>
+      <ion-input type="number" placeholder="Escribir" 
+      [(ngModel)]="telefono"></ion-input>
+    </ion-item>
+  
+    <ion-item fill="outline" class="ion-margin">
+      <ion-label position="floating">Cumpleaños</ion-label>
+      <ion-input placeholder="Escribir" 
+      [(ngModel)]="cumpleanos"></ion-input>
+    </ion-item>
+  
+    <ion-button expand="block" class="ion-margin"
+    (click)="guardar()">
+      Registrar
+    </ion-button>
+
+    <ion-alert
+    [isOpen]="notificar"
+    header="Amigo registrado correctamente"
+    message="Puedes retroceder para verlo"
+    [buttons]="botones"
+    ></ion-alert>
+
+</ion-content>

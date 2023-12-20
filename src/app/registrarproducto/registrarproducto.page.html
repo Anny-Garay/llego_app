@@ -1,0 +1,51 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Registrar Producto</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  
+  <ion-item fill="outline" class="ion-margin">
+    <ion-label position="floating">Nombre</ion-label>
+    <ion-input placeholder="Escribir" 
+    [(ngModel)]="nombre"></ion-input>
+  </ion-item>
+  
+  <ion-item fill="outline" class="ion-margin">
+    <ion-label position="floating">Peso</ion-label>
+    <ion-input type="number" placeholder="Escribir" 
+    [(ngModel)]="peso"></ion-input>
+  </ion-item>
+
+  <ion-item fill="outline" class="ion-margin">
+    <ion-label position="floating">Precio</ion-label>
+    <ion-input type="number"  placeholder="Escribir" 
+    [(ngModel)]="precio"></ion-input>
+  </ion-item>
+
+  <ion-item fill="outline" class="ion-margin">
+    <ion-label position="floating">Stock</ion-label>
+    <ion-input placeholder="Escribir" 
+    [(ngModel)]="stock"></ion-input>
+  </ion-item>
+
+  <ion-item fill="outline" class="ion-margin">
+    <ion-label position="floating">Tipo</ion-label>
+    <ion-input placeholder="Escribir" 
+    [(ngModel)]="tipo"></ion-input>
+  </ion-item>
+
+  <ion-button expand="block" class="ion-margin"
+  (click)="guardar()">
+    Registrar
+  </ion-button>
+
+  <ion-alert
+  [isOpen]="notificar"
+  header="Producto registrado correctamente"
+  message="Puedes retroceder para verlo"
+  [buttons]="botones"
+  ></ion-alert>
+
+</ion-content>

@@ -1,0 +1,52 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Registra tu evento :)</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-item fill="outline" class="ion-margin">
+    <ion-label position="floating">Nombre</ion-label>
+    <ion-input placeholder="Escribir" 
+    [(ngModel)]="nombre"></ion-input>
+  </ion-item>
+
+  
+  
+  <ion-item fill="outline" class="ion-margin">
+    <ion-label position="floating">Fecha</ion-label>
+    <ion-input type="datetime-local" placeholder="Escribir" 
+    [(ngModel)]="fecha"></ion-input>
+  </ion-item>
+
+  <ion-item fill="outline" class="ion-margin">
+    <ion-label position="floating">Lugar</ion-label>
+    <ion-input placeholder="Escribir" 
+    [(ngModel)]="lugar"></ion-input>
+  </ion-item>
+
+  <ion-item fill="outline" class="ion-margin">
+    <ion-label position="floating">Notas</ion-label>
+    <ion-input placeholder="Escribir" 
+    [(ngModel)]="notas"></ion-input>
+  </ion-item>
+
+  <ion-button expand="block" class="ion-margin"
+  (click)="guardar()">
+    Registrar
+  </ion-button>
+
+  <ion-button expand="block" class="ion-margin"
+  (click)="guardar()">
+    Regresar
+  </ion-button>
+
+  <ion-alert
+  [isOpen]="notificar"
+  header="Evento registrado correctamente"
+  message="Puedes ir a los eventos para verlo"
+  [buttons]="botones"
+  ></ion-alert>
+
+</ion-content>

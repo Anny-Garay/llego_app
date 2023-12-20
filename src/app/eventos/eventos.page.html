@@ -1,0 +1,22 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Evento</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding" [fullscreen]="true">
+
+    <h1>{{ evento?.nombre }}</h1>
+    <h3>{{ evento?.lugar }}</h3>
+    <h5>{{ evento?.fecha }}</h5>
+    <h5>{{ evento?.notas }}</h5>
+    <hr>
+
+    <h2>Asistentes</h2>
+    <ul>
+      <li>Iron Man</li>
+      <li>Deadpool</li>
+      <li>Michina</li>
+      <li>BTS</li>
+    </ul>
+</ion-content>
